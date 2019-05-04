@@ -1,0 +1,29 @@
+{
+    "name": "payment-microservice",
+    "version": "0.0.1",
+    "description": "A payment microservice written in clean architecture",
+    "main": "dist/main.js",
+    "scripts": {
+        "test": "mocha -r ts-node/register src/**/*.spec.ts",
+        "test:watch": "mocha -r ts-node/register -w --watch-extensions ts src/**/*.spec.ts",
+        "watch": "tsc -w",
+        "compile": "tsc"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/chai": "^4.1.7",
+        "@types/joi": "^14.3.3",
+        "@types/mocha": "^5.2.6",
+        "@types/node": "^11.13.8",
+        "chai": "^4.2.0",
+        "mocha": "^6.1.4",
+        "prettier": "^1.17.0",
+        "ts-node": "^8.1.0",
+        "typescript": "^3.4.4"
+    },
+    "dependencies": {
+        "cuid": "^2.1.6",
+        "joi": "^14.3.1"
+    }
+}
